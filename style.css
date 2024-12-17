@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FCFAEE;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #384B70;
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+section h2 {
+  color: #384B70;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #384B70;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #384B70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+#searchBookTitle {
+  margin-bottom: 16px;
+}
+
+#incompleteBookList,
+#completeBookList {
+  padding: 16px;
+}
+
+.book-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.book-item h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.book-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.book-item .action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.book-item button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.book-item button:hover {
+  opacity: 0.8;
+}
+
+.book-item button:active {
+  background-color: #003366;
+}
+
+.book-item .undoButton {
+  background-color: #F8B400;
+}
+
+.book-item .deleteButton {
+  background-color: #B8001F;
+}
+
+.book-item .completeButton {
+  background-color: #347928;
+}
+
+.book-item.highlight {
+  background-color: #f0f8ff;
+}
+
+.editButton {
+  background-color: #507687;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  opacity: 0.8;
+}
+
+.edit-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-item.editing .action-buttons {
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+button.saveButton,
+button.cancelButton {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button.saveButton {
+  background-color: #347928;
+  color: white;
+  margin-right: 10px;
+}
+
+button.saveButton:hover {
+  opacity: 0.8;
+}
+
+button.cancelButton {
+  background-color: #B8001F;
+  color: white;
+}
+
+button.cancelButton:hover {
+  opacity: 0.8;
+}
+
+.edit-mode {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button.saveButton,
+button.cancelButton {
+  margin-top: 10px;
+}
+
+#clearFormButton {
+  background-color: lightgray;
+  margin-top: 12px;
+}
+
+.book-item.editing {
+  background-color: #e8f5e9;
+}
+
+.book-item.editing .action-buttons {
+  flex-direction: column;
+  gap: 10px;
+}
+
+#searchBookTitle {
+  margin-bottom: 16px;
+}
+
+#bookFormIsCompleteContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#bookFormIsCompleteContainer label {
+  margin: 0;
+}
+
+#bookFormIsComplete {
+  margin: 0;
+}
